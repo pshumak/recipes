@@ -10,72 +10,29 @@ html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
-    box-sizing: inherit;
-
-  
-    
+    box-sizing: inherit;  
   }
 
- 
-}
-/*
-*/
-
 .search {
-    /*position: relative;
-    top: 0;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    
-    justify-self: center;
-    
-    */
     margin: 0 auto;
     background-color: #F2F2F2;
     width: 100%;
-   /* display: grid;
-    grid-template-columns: 1fr 1fr; */
   }
-}
-
-.search svg {
-    /*height: 50%;*/
-}
 
 .search button {
-    /*height: 50%;
-    width: 20%;
-    margin: 0 auto;
-    bottom: 42%;
-    position: relative;*/
-   /* width: 100%;
-    grid-column: 2;
-    border: 5px solid #EB5428;
-    background-color: #EB5428;
-    justify-self: right;*/
     border: 5px solid #EB5428;
     background-color: #EB5428;
     justify-self: right;
     grid-column: 2 / 3;
     width: 100%;
   }
-}
 
 #site-search {
     line-height: 200%;
-   /* grid-column: 1 / 1;*/
     border: none;
     grid-column: 1 / 1;
 }
 .search-bar {
-    /*border: 1px solid #EB5428;
-    text-align: center;
-    display: grid;
-    margin: 0 auto;
-    width: 30%;
-    bottom: 43%;
-    position: relative;*/
     border: 1px solid #EB5428;
     text-align: center;
     display: grid;
@@ -84,7 +41,6 @@ html {
     bottom: 43%;
     position: relative;
     grid-template-columns: 1fr 10%;
-    
 }
 
 
@@ -163,23 +119,8 @@ dl dd {
     place-self: center;
 }
 
-
-/*
-dl dt {
-    display: inline-block;
-}
-
-dl dd {
-    display: inline-block;
-}*/
-
-
-
 .street_tacos {
     display: grid;
-   /* grid-template-columns: 10% 40% 1fr;
-    grid-template-rows: 20% 1fr; */
-
 }
 
 .p {
@@ -202,13 +143,10 @@ menu {
 }
 
 .street_tacos h1 {
-    /*grid-column: 2 / 3;
-    justify-self: end; */
     position: relative;
     margin: 0 auto;
     bottom: 128%;
     z-index: 2;
-
 }
 
 a {
@@ -230,13 +168,10 @@ a {
   }
 
   body {
-   
     margin: 0 auto;
     width: 80%;
     display: grid;
-    /*grid-template-rows: 1fr 1fr 1fr;*/
     background-color: #ffffff;
-
   }
 
   main {
@@ -282,7 +217,6 @@ a {
   }
 
   nav li {
-   /* width: calc(100%/9); */
    text-align: center;
   }
 
@@ -303,13 +237,10 @@ a {
     line-height: 200%;
   }
   
-
-
-  
-
   .social_media li {
     display: inline-block;
   }
+
 .social_media {
     grid-column: 2 /2;
     grid-row: 1 / 1;
@@ -332,13 +263,11 @@ nav a {
     padding: 5%;
   }
 
-
 .copyright {
     display: grid;
     grid-template-columns: 40% 1fr;
     grid-template-rows: 10% 1fr;
 }
-
 
 .copyright p {
     grid-column: 1 / 2;
@@ -346,8 +275,7 @@ nav a {
     justify-self: end;
     text-align: center;
     grid-row: 2 / 2;
-    left: 26%;
-    
+    left: 26%; 
 }
 
 .social_media h2 {
@@ -370,26 +298,6 @@ menu li {
     list-style-type: none;
 }
 
-/*
-  ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
- li {
-    display: inline;
-    
- }
-
- nav {
-    display: inline;
-    width: 100%;
- }
-*/
-
 figure img {
     padding-bottom: 10%;
 }
@@ -399,33 +307,13 @@ figure img {
     position: relative;
     justify-self: center;
     top: 78%;
-    }
+}
 
 .dishes div {
-        /*display: inline-block;*/
         grid-row: 2 / 2;
         justify-self: center;
-      }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*FONTS*/
-/*{
-    font-family: 'Bebas Neue', sans-serif;
-
-    font-family: 'Montserrat', sans-serif;
-}*/
 
 h1, h2, h3, nav a, nav span, menu li, #social li, footer {
     font-family: 'Bebas Neue', sans-serif;
@@ -440,10 +328,6 @@ dt {
     font-weight: bold;
 }
 
-
-
-/* MENU NAV */
-/
 nav ul {
     overflow: hidden;
     max-height: 0;
@@ -451,6 +335,7 @@ nav ul {
     width: 100%;  
    
 }
+
 label {
     cursor: pointer;
     display: inline-block;
@@ -458,6 +343,7 @@ label {
     position: relative;
     user-select: none;
 }
+
 label span {
     background-color: #ffffff;
     display: block;
@@ -466,6 +352,7 @@ label span {
     transition: background-color .2s ease-out;
     width: 18px;
 }
+
 label span:before, label span:after {
     background: #ffffff;
     content: '';
@@ -475,27 +362,35 @@ label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
+
 label span:before {
     top: 5px;
 }
+
 label span:after {
     top: -5px;
 }
+
 input {
-    display: non;
+    display: none;
 }
+
 input:checked ~ ul {
     max-height: 500px;
 }
+
 input:checked ~ label span {
     background: transparent;
 }
+
 input:checked ~ label span:before {
     transform: rotate(-45deg);
 }
+
 input:checked ~ label span:after {
     transform: rotate(45deg);
 }
+
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
@@ -508,14 +403,14 @@ nav ul {
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     width: 80%;
 }
+
 label span, input {
     display: none;
 }
+
 .hamburger_icon {
     display: none;
 }
-
-
 
 @media screen and (max-width:768px) {
     nav ul {
@@ -526,13 +421,13 @@ label span, input {
         
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
-        grid-template-rows: 1fr 1fr;
-        
-        
+        grid-template-rows: 1fr 1fr;  
     }
+
     label span, input {
         display: none;
     }
+
     .hamburger_icon {
         display: none;
     }
@@ -540,24 +435,23 @@ label span, input {
     nav li:last-of-type {
         grid-row: 1 / 1;
         grid-column: 7 / 8;
-        width: 51%;
-        
-        
+        width: 51%; 
     }
+
     nav {
         height: 200%;
     }
+
     nav li {
         grid-row: 2 / 2;
     }
+
     nav li:first-of-type {
         justify-self: left;
         grid-row: 1 / 1;
-      }
+    }
 
 }
-    */
-
 
     @media screen and (max-width:414px) {
         nav ul {
@@ -568,13 +462,13 @@ label span, input {
             
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             width: 100%;
-            grid-template-rows: 1fr 1fr;
-            
-            
+            grid-template-rows: 1fr 1fr;  
         }
+
         label span, input {
             display: none;
         }
+
         .hamburger_icon {
             display: none;
         }
@@ -583,15 +477,16 @@ label span, input {
             grid-row: 1 / 1;
             grid-column: 7 / 8;
             width: 51%;
-            
-            
         }
+
         nav {
             height: 200%;
         }
+
         nav li {
             grid-row: 2 / 2;
         }
+
         nav li:first-of-type {
             justify-self: left;
             grid-row: 1 / 1;
